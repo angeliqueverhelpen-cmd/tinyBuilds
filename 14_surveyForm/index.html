@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Share how you like to learn and what you want to explore as a developer."
+    />
+    <title>Developer Student Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Developer Student Survey</h1>
+        <p id="description">
+          How and what do developer students actually like to learn? Share your
+          preferences to help shape better learning experiences.
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal information</legend>
+          <div class="personal-fields">
+            <div class="field">
+              <label for="name" id="name-label"
+                >Full name <span>(required)</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Sophie Martinez"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="email" id="email-label"
+                >Email address <span>(required)</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="number" id="number-label"
+                >Age <span>(optional)</span></label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="16"
+                max="100"
+                placeholder="Your age"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Areas of interest</legend>
+          <div class="field">
+            <label for="dropdown"
+              >Which area of development interests you most?</label
+            >
+            <select name="dropdown" id="dropdown">
+              <option value="mobile">Mobile</option>
+              <option value="game">Game</option>
+              <option value="front-end">Front-end</option>
+              <option value="back-end">Back-end</option>
+              <option selected value="full-stack">Full-stack</option>
+              <option value="software">Software</option>
+              <option value="still-figuring-it-out">
+                Still figuring it out
+              </option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Learning preferences</legend>
+          <p class="hint">What is your preferred way to learn?</p>
+          <div class="choices choices--single">
+            <label class="choice" for="video-option">
+              <input
+                id="video-option"
+                type="radio"
+                name="learning-option"
+                value="video-courses"
+              />
+              Video courses
+            </label>
+            <label class="choice" for="docu-option">
+              <input
+                id="docu-option"
+                type="radio"
+                name="learning-option"
+                value="documentation"
+              />
+              Reading documentation
+            </label>
+            <label class="choice" for="interactive-option">
+              <input
+                id="interactive-option"
+                type="radio"
+                name="learning-option"
+                value="interactive"
+              />
+              Interactive exercises
+            </label>
+            <label class="choice" for="projects-option">
+              <input
+                id="projects-option"
+                type="radio"
+                name="learning-option"
+                value="projects"
+              />
+              Building projects
+            </label>
+            <label class="choice" for="combo-option">
+              <input
+                id="combo-option"
+                type="radio"
+                name="learning-option"
+                value="combo"
+              />
+              A combination of everything
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Languages to learn</legend>
+          <p class="hint">
+            Which programming languages interest you? Choose all that apply.
+          </p>
+          <div class="choices">
+            <label class="choice" for="javascript">
+              <input
+                type="checkbox"
+                id="javascript"
+                name="tech"
+                value="javascript"
+              />
+              JavaScript
+            </label>
+            <label class="choice" for="python">
+              <input type="checkbox" id="python" name="tech" value="python" />
+              Python
+            </label>
+            <label class="choice" for="c#">
+              <input type="checkbox" id="c#" name="tech" value="c#" />
+              C#
+            </label>
+            <label class="choice" for="java">
+              <input type="checkbox" id="java" name="tech" value="java" />
+              Java
+            </label>
+            <label class="choice" for="c++">
+              <input type="checkbox" id="c++" name="tech" value="c++" />
+              C++
+            </label>
+            <label class="choice" for="php">
+              <input type="checkbox" id="php" name="tech" value="php" />
+              PHP
+            </label>
+            <label class="choice" for="typescript">
+              <input
+                type="checkbox"
+                id="typescript"
+                name="tech"
+                value="typescript"
+              />
+              TypeScript
+            </label>
+            <label class="choice" for="rust">
+              <input type="checkbox" id="rust" name="tech" value="rust" />
+              Rust
+            </label>
+            <label class="choice" for="other">
+              <input type="checkbox" id="other" name="tech" value="other" />
+              Other
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your coding journey</legend>
+          <div class="field">
+            <label for="experience"
+              >How long have you been learning to code?</label
+            >
+            <select name="experience" id="experience">
+              <option value="">Select an option</option>
+              <option value="less-than-1">Less than 1 year</option>
+              <option value="1-2">1–2 years</option>
+              <option value="3-5">3–5 years</option>
+              <option value="more-than-5">More than 5 years</option>
+              <option value="not-started-yet">I haven't started yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="share">Anything else you'd like to share?</label>
+            <textarea
+              name="share"
+              id="share"
+              placeholder="Tell us a little about your coding journey..."
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" id="submit">Submit survey</button>
+      </form>
+    </main>
+  </body>
+</html>

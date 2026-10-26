@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Consent — Pac-Man Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Wat pagina-inhoud zodat de banner ergens overheen kan zweven -->
+    <main class="page-demo">
+      <h1>Mijn website</h1>
+      <p>Scroll gerust rond — de cookiebanner wacht beneden op je.</p>
+    </main>
+
+    <div
+      id="cookie-banner"
+      class="cookie-banner hidden"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Cookiemelding"
+    >
+      <div class="arcade-cabinet">
+        <div class="arcade-header">
+          <span class="marquee">★ INSERT COOKIE ★</span>
+          <span class="score-box">
+            SCORE <span id="score" aria-live="polite">000</span>
+          </span>
+        </div>
+
+        <div class="cookie-stage" id="stage">
+          <div class="maze-path"></div>
+
+          <div id="pacman" class="pacman">
+            <div class="pacman-mouth"></div>
+            <div class="pacman-eye"></div>
+          </div>
+
+          <div class="ghost" id="ghost" aria-hidden="true">👻</div>
+
+          <div class="dots-row" id="dotsRow">
+            <button
+              type="button"
+              class="cookie-dot"
+              data-key="necessary"
+              title="Noodzakelijk"
+            >
+              <span class="dot-emoji">🍪</span>
+              <span class="dot-label">Noodzakelijk</span>
+            </button>
+            <button
+              type="button"
+              class="cookie-dot"
+              data-key="functional"
+              title="Functioneel"
+            >
+              <span class="dot-emoji">🍪</span>
+              <span class="dot-label">Functioneel</span>
+            </button>
+            <button
+              type="button"
+              class="cookie-dot"
+              data-key="analytics"
+              title="Analytics"
+            >
+              <span class="dot-emoji">🍪</span>
+              <span class="dot-label">Analytics</span>
+            </button>
+            <button
+              type="button"
+              class="cookie-dot"
+              data-key="marketing"
+              title="Marketing"
+            >
+              <span class="dot-emoji">🍪</span>
+              <span class="dot-label">Marketing</span>
+            </button>
+          </div>
+        </div>
+
+        <p class="cookie-text">
+          Deze site gebruikt cookies. Pac-Man ook. Mag hij ze allemaal opeten?
+        </p>
+
+        <div class="cookie-buttons">
+          <button id="cookie-accept" class="btn btn-accept">
+            ▶ START — AKKOORD
+          </button>
+          <button id="cookie-decline" class="btn btn-decline">
+            GAME OVER — WEIGEREN
+          </button>
+        </div>
+
+        <button
+          id="toggle-settings"
+          class="btn-settings-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="prefs-panel"
+        >
+          ⚙ VOORKEUREN AANPASSEN
+        </button>
+
+        <div id="prefs-panel" class="prefs-panel hidden">
+          <div class="pref-row">
+            <div class="pref-label">
+              <span>🔒 Noodzakelijk</span>
+              <small>Altijd actief — de site werkt hier niet zonder.</small>
+            </div>
+            <label class="switch switch-locked">
+              <input
+                type="checkbox"
+                checked
+                disabled
+                data-key="necessary"
+                aria-label="Noodzakelijke cookies (altijd actief)"
+              />
+              <span class="switch-track"
+                ><span class="switch-thumb"></span
+              ></span>
+            </label>
+          </div>
+
+          <div class="pref-row">
+            <div class="pref-label">
+              <span>Functioneel</span>
+              <small>Onthoudt je voorkeuren en instellingen.</small>
+            </div>
+            <label class="switch">
+              <input
+                type="checkbox"
+                data-key="functional"
+                aria-label="Functionele cookies"
+              />
+              <span class="switch-track"
+                ><span class="switch-thumb"></span
+              ></span>
+            </label>
+          </div>
+
+          <div class="pref-row">
+            <div class="pref-label">
+              <span>Analytics</span>
+              <small>Helpt ons begrijpen hoe de site gebruikt wordt.</small>
+            </div>
+            <label class="switch">
+              <input
+                type="checkbox"
+                data-key="analytics"
+                aria-label="Analytics cookies"
+              />
+              <span class="switch-track"
+                ><span class="switch-thumb"></span
+              ></span>
+            </label>
+          </div>
+
+          <div class="pref-row">
+            <div class="pref-label">
+              <span>Marketing</span>
+              <small>Voor relevante advertenties op andere sites.</small>
+            </div>
+            <label class="switch">
+              <input
+                type="checkbox"
+                data-key="marketing"
+                aria-label="Marketing cookies"
+              />
+              <span class="switch-track"
+                ><span class="switch-thumb"></span
+              ></span>
+            </label>
+          </div>
+
+          <button id="save-prefs" class="btn btn-save-prefs" type="button">
+            ✔ VOORKEUREN OPSLAAN
+          </button>
+        </div>
+
+        <p class="fine-print">
+          Je kan je keuze altijd wijzigen via de cookie-instellingen.
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

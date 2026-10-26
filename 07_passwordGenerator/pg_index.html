@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pg_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Wachtwoord Generator</title>
+  </head>
+  <body>
+    <main>
+      <div class="password-container">
+        <h1>Random Password Generator🔐</h1>
+
+        <div class="input-container">
+          <label for="input" class="sr-only">Gegenereerd wachtwoord</label>
+          <input type="text" id="input" class="input" placeholder="Klik op Genereer" readonly aria-describedby="strength-label">
+          <i class="fa-regular fa-copy fa-2x" role="button" tabindex="0" aria-label="Kopieer wachtwoord"></i>
+        </div>
+
+        <div class="strength-bar-container" role="presentation">
+          <div class="strength-bar" id="strength-bar"></div>
+        </div>
+        <span class="strength-label" id="strength-label" aria-live="polite"></span>
+
+        <div class="checkboxes" role="group" aria-labelledby="options-label">
+          <span id="options-label" class="sr-only">Tekengroepen</span>
+          <label><input type="checkbox" id="chk-upper" checked> Hoofdletters</label>
+          <label><input type="checkbox" id="chk-numbers" checked> Cijfers</label>
+          <label><input type="checkbox" id="chk-symbols" checked> Symbolen</label>
+        </div>
+
+        <button type="button" class="btn">Genereer wachtwoord</button>
+      </div>
+    </main>
+
+    <div class="alert-container" id="alert-container" role="status" aria-live="polite"></div>
+    <script src="pg_index.js"></script>
+  </body>
+</html>

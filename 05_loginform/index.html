@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <form id="login-form">
+        <label for="userName"> Name 👩</label>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          placeholder="Jack Black"
+          required
+        />
+        <label for="userEmail"> Email</label>
+        <input
+          type="email"
+          id="userEmail"
+          name="userEmail"
+          placeholder="jack.black@example.com"
+          required
+        />
+        <label for="userPassword">Password</label>
+        <input
+          type="password"
+          id="userPassword"
+          name="userPassword"
+          placeholder="******"
+          required
+        />
+        <button type="submit">submit</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

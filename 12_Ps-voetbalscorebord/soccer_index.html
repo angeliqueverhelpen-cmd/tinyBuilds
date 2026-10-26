@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UEFA Match Scoreboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="soccer_styles.css">
+</head>
+<body>
+
+  <!-- Achtergrond -->
+  <div class="bg">
+    <img src="Group 2.png" alt="retrogame afbeelding voetballers ac milan en chelsea">
+  </div>
+
+  <!-- Scorebord overlay -->
+  <div class="scoreboard">
+
+    <div class="board-main">
+
+      <div class="team-section">
+        <span class="team-label">AC MILAN</span>
+        <div class="score-box" id="score-home" title="Klik voor goal">0</div>
+        <div class="cards-display" id="cards-home"></div>
+        <div class="team-buttons">
+          <button type="button" class="action-btn" data-team="home" data-action="yellow">Yellow</button>
+          <button type="button" class="action-btn" data-team="home" data-action="red">Red</button>
+        </div>
+      </div>
+
+      <div class="vs-wrap">
+        <div class="vs-badge">VS</div>
+      </div>
+
+      <div class="team-section">
+        <span class="team-label">CHELSEA</span>
+        <div class="score-box" id="score-away" title="Klik voor goal">0</div>
+        <div class="cards-display" id="cards-away"></div>
+        <div class="team-buttons">
+          <button type="button" class="action-btn" data-team="away" data-action="yellow">Yellow</button>
+          <button type="button" class="action-btn" data-team="away" data-action="red">Red</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="board-footer">
+      <div class="footer-box">HALF TIME: 1 - 0 · 45:00 + 2:15</div>
+      <div class="goal-banner" id="goal-banner">⚽ GOAAAL!</div>
+      <div class="footer-box">2nd Half</div>
+      <button type="button" id="reset-btn" class="reset-btn" title="Reset">↺</button>
+    </footer>
+
+  </div>
+
+  <script src="soccer_index.js"></script>
+</body>
+</html>
