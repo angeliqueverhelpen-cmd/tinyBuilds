@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f5ef;
+  color: #292820;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  background-image: url("pattern.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0;
+  color: #fff3a6;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  text-shadow: 2px 3px 8px rgb(0 0 0 / 65%);
+}
+
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e4d8;
+  padding: 0.7rem 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #4a473b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #8b6a22;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1120px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.products section {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e8e4d8;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgb(45 39 20 / 7%);
+}
+
+.products h2 {
+  margin: 0;
+  padding: 0.8rem 1.25rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.brushes h2 {
+  background-color: #34815b;
+}
+
+.frames h2 {
+  background-color: #b9534d;
+}
+
+.paints h2 {
+  background-color: #397c9e;
+}
+
+.products img {
+  display: block;
+  width: calc(100% - 2.5rem);
+  height: 180px;
+  margin: 1.25rem auto 0;
+  object-fit: contain;
+}
+
+h3 {
+  margin: 1rem 1.25rem 0.4rem;
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0 1.25rem 1.5rem;
+  color: #555247;
+}
+
+.price {
+  display: block;
+  margin-top: 0.75rem;
+  color: #8b6a22;
+}
+
+footer {
+  background-color: #e9e5d9;
+  padding: 1rem;
+  text-align: center;
+  color: #625e51;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .products {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 1.5rem auto;
+  }
+}
