@@ -1,0 +1,214 @@
+/* Add your CSS styles here */
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  margin: 10px;
+}
+header {
+  position: sticky;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  max-height: 50px;
+  max-width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: seashell;
+  text-decoration: underline;
+}
+
+#mission {
+  min-height: 300px;
+  max-height: 700px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("./images/img-mission-background.webp");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid seashell;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  color: seashell;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.mission-content h2 {
+  margin: 0 0 8px;
+}
+
+.mission-content h4 {
+  margin: 0;
+}
+
+h2 {
+    color: seashell;
+  font-size: 2rem;
+}
+h4 {
+  color: seashell;
+  font-size: 1.5rem;
+}
+
+
+p {
+  color: seashell;
+  margin: 10px 0;
+  color: seashell;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+figcaption {
+  color: seashell;
+  text-align: start;
+  margin-top: 10px;
+}
+img{
+    max-height: 200px;
+    width: auto;
+    display:flex;
+
+}
+.featured-tea-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#featured-tea {
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#featured-tea h2,
+#featured-tea p {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+#featured-tea figure {
+  width: 300px;
+  max-width: 100%;
+  margin: 0;
+}
+
+#featured-tea img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#featured-tea figcaption {
+  text-align: center;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 20px;
+  background-image: url("./images/img-locations-background.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.location-content h2 {
+  margin: 0;
+}
+
+.location-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.location-block {
+  width: 300px;
+  max-width: 100%;
+  padding: 20px;
+  color: seashell;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.location-block h3 {
+  margin: 0 0 20px;
+}
+
+.location-block p {
+  margin: 0;
+  background-color: transparent;
+  line-height: 2;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: seashell;
+    text-align: center;
+    border: 1px solid seashell;
+    border-radius: 8px;
+}
+#contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: seashell;
+  text-align: center;
+}
+
+.contact{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border: 1px solid seashell;
+  border-radius: 8px;
+}
+.contact h2, .contact p{
+  color: seashell;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+footer{
+  
+  color: seashell;
+  text-align: start;
+  padding: 1rem;
+  border-top: 1px solid seashell;
+}
+
+
